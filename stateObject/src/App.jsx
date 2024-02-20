@@ -31,7 +31,11 @@ function App() {
         <article>
           {/*Displays various information for the person*/}
           <h2>John Doe</h2>
-          <img className="favorite" src=.${starIcon} onclick={toggleFavorite} />
+          <img
+            className="favorite"
+            src={`../assets/${starIcon}`}
+            onclick={toggleFavorite}
+          />
           <p>445-555-202</p>
           <p>myemail@adress.com</p>
         </article>
