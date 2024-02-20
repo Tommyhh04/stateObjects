@@ -14,7 +14,7 @@ function App() {
     isFavorite: false,
   });
 
-  let starIcon = contact.isFavorite ? "starFav" : "starUnFav";
+  let starIcon = contact.isFavorite ? "starFav.jpg" : "starUnFav.jpg";
 
   function toggleFavorite() {
     setContact((prevContact) => ({
@@ -33,7 +33,7 @@ function App() {
           <h2>John Doe</h2>
           <img
             className="favorite"
-            src={`../assets/${starIcon}`}
+            src={`./assets/${starIcon}`}
             onclick={toggleFavorite}
           />
           <p>445-555-202</p>
