@@ -22,7 +22,7 @@ function App() {
       isFavorite: !prevContact.isFavorite,
     }));
   }
-  //Test github profile is correct
+
   return (
     <div>
       <main>
