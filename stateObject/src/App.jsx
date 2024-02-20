@@ -11,10 +11,10 @@ function App() {
     lastName: "Doe",
     phone: "445-555-202",
     email: "myemail@adress.com",
-    isFavorite: false,
+    isFavorite: true,
   });
 
-  let starIcon = contact.isFavorite ? "starFav.jpg" : "starUnFav.jpg";
+  let starIcon = contact.isFavorite ? starFav : starUnFav;
 
   function toggleFavorite() {
     setContact((prevContact) => ({
@@ -31,11 +31,7 @@ function App() {
         <article>
           {/*Displays various information for the person*/}
           <h2>John Doe</h2>
-          <img
-            className="favorite"
-            src={`./assets/${starIcon}`}
-            onclick={toggleFavorite}
-          />
+          <img className="favorite" src={starIcon} onclick={toggleFavorite} />
           <p>445-555-202</p>
           <p>myemail@adress.com</p>
         </article>
