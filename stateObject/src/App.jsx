@@ -14,6 +14,10 @@ function App() {
     isFavorite: false,
   });
 
+  let starIcon = contact.isFavorite ? "starFav" : "starUnFav";
+
+  function toggleFavorite() {}
+
   return (
     <div>
       <main>
