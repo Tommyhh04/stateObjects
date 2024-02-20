@@ -4,6 +4,8 @@ import starFav from "./assets/starFav.jpg";
 import starUnFav from "./assets/starUnFav.jpg";
 import "./AppStyling.css";
 
+/*This app creates a simple un styled page that is mostly static except the favorite star that can be switched between unfavorite or favorite when clicked on. 
+It is made to practice what ive learned using scrimba videos so it is not built like a real project and is very simple*/
 function App() {
   //Contains various information about person and stores it in a object
   const [contact, setContact] = React.useState({
